@@ -1,0 +1,19 @@
+<web-app xmlns="http://caucho.com/ns/resin">
+    <!-- configures the default class loader -->
+    <class-loader>
+        <compiling-loader path="WEB-INF/classes" source="WEB-INF/src"/>
+        <library-loader path="WEB-INF/lib"/>
+    </class-loader>
+    <javac compiler="internal" args="-source 1.8 -target 1.8 -encoding UTF-8 -Xlint:unchecked -Xlint:-options"/>
+    <database>
+        <jndi-name>jdbc/igd</jndi-name>
+        <driver type="com.mysql.cj.jdbc.Driver">
+            <url>jdbc:mysql://221.143.42.212:3306/igd?autoReconnect=true</url>
+            <user>igd</user>
+            <password>igd!@</password>
+        </driver>
+        <prepared-statement-cache-size>8</prepared-statement-cache-size>
+        <max-connections>4</max-connections>
+        <max-idle-time>30s</max-idle-time>
+    </database>
+</web-app>

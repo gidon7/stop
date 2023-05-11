@@ -1,0 +1,109 @@
+/*메인*/
+.inner h1.logo {
+   width: 400px;
+}
+
+#logo_h1 {
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 90px;
+}
+
+#logo_enter {
+    color: rgba(22, 145, 245);
+}
+
+#info_img1{
+    width: 500px;
+    height: 330px;
+    float: left;
+    margin-right: 20px;
+}
+
+#course_file_url1{
+    width: 500px;
+    height: 330px;
+}
+
+#info_text1 {
+    width: 650px;
+    float: left;
+}
+
+#info_btn {
+    display: block;
+}
+
+#info_btn_black {
+    float: right;
+    margin-top: 200px;
+}
+
+/* Course_list */
+#course_ord_btn {
+    padding : 0px;
+}
+
+/* Course_view */
+.content_title {
+    text-align: center;
+}
+
+/* mypage/course_list */
+.label.w30 {
+    background: lightblue;
+    font-size: 15px;
+}
+
+.cert_btn {
+    padding: 2px 5px;
+}
+
+/* Certificate */
+.certificate1 {
+    height: 100%;
+}
+/* Classroom */
+.sub_top_classroom {
+    background: url(/common/images/classroom_top.png);
+}
+
+.classroom_out a {
+    background: url(/common/images/classroom_out.png) 14px 50% no-repeat;
+}
+
+.main_wrap_classroom #contet_area {
+    width: 1020px;
+    margin: 20px;
+    padding: 19px;
+}
+
+#wrap_classroom {
+    background: #1A1617 url(/common/images/classroom_bg.jpg) no-repeat;
+}
+
+/* 페이지바 */
+.page_box .page_first_btn {
+    background: url("/common/images/page_first_btn.png") no-repeat 50% 50%;
+}
+
+.page_box .page_prev_btn {
+    background: url("/common/images/page_prev_btn.png") no-repeat 50% 50%;
+}
+
+.page_box .page_next_btn {
+    background: url("/common/images/page_next_btn.png") no-repeat 50% 50%;
+}
+
+.page_box .page_last_btn {
+    background: url("/common/images/page_last_btn.png") no-repeat 50% 50%;
+}
+
+/*풋터*/
+#hidden_font {
+    color: rgba(0,0,0,0);
+}
+
+#privacy_area{
+    width: 100%; !important;
+}

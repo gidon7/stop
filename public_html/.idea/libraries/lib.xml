@@ -1,0 +1,30 @@
+<component name="libraryTable">
+  <library name="lib">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/WEB-INF/lib/commons-dbcp-1.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/WEB-INF/lib/jxl.jar!/" />
+      <root url="jar://$PROJECT_DIR$/WEB-INF/lib/commons-fileupload-1.3.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/WEB-INF/lib/json_simple.jar!/" />
+      <root url="jar://$PROJECT_DIR$/WEB-INF/lib/commons-logging-1.1.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/WEB-INF/lib/xmlbeans-2.6.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/WEB-INF/lib/commons-digester-2.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/WEB-INF/lib/commons-beanutils-1.8.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/WEB-INF/lib/commons-collections4-4.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/WEB-INF/lib/commons-compress-1.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/WEB-INF/lib/commons-io-2.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/WEB-INF/lib/jxls-core-1.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/WEB-INF/lib/jxls-reader-1.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/WEB-INF/lib/commons-jexl-2.1.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/WEB-INF/lib/commons-collections-3.2.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/WEB-INF/lib/commons-codec-1.10.jar!/" />
+      <root url="jar://$PROJECT_DIR$/WEB-INF/lib/json.jar!/" />
+      <root url="jar://$PROJECT_DIR$/WEB-INF/lib/commons-pool-1.5.6.jar!/" />
+      <root url="jar://$PROJECT_DIR$/WEB-INF/lib/malgn-1.10.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/WEB-INF/lib/poi-ooxml-schemas-3.17.jar!/" />
+      <root url="jar://$PROJECT_DIR$/WEB-INF/lib/poi-3.17.jar!/" />
+      <root url="jar://$PROJECT_DIR$/WEB-INF/lib/poi-ooxml-3.17.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="b2b385f3-2159-412e-8c73-0331a155bd07" name="otes.malgn.co.kr" url="http://otes.malgn.co.kr">
+        <fileTransfer host="otes.malgn.co.kr" port="21">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+      <webServer id="6be38ad0-b347-44cb-9653-e56b02ef8ce1" name="igd" url="http://igd.malgn.co.kr">
+        <fileTransfer host="igd.malgn.co.kr" port="21">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

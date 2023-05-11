@@ -1,0 +1,109 @@
+<style>
+    .form-group{margin-top:10px;}
+</style>
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-header">
+                    <!--@nif(modify)-->회원가입<!--/nif(modify)-->
+                    <!--@if(modify)-->수정<!--/if(modify)-->
+                </div>
+
+                <div class="card-body">
+                    <form name="form1" method="POST" action="">
+                        <div class="form-group row">
+                            <label for="login_id" class="col-md-4 col-form-label text-md-right">로그인 아이디</label>
+
+                            <div class="col-md-6">
+                                <input id="login_id" type="text" class="form-control" name="login_id" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <label for="user_nm" class="col-md-4 col-form-label text-md-right">이름</label>
+
+                            <div class="col-md-6">
+                                <input id="user_nm" type="text" class="form-control" name="user_nm" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <label for="passwd" class="col-md-4 col-form-label text-md-right">비밀번호</label>
+
+                            <div class="col-md-6">
+                                <input id="password" type="password" class="form-control" name="passwd" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <label for="password-confirm" class="col-md-4 col-form-label text-md-right">비밀번호 확인</label>
+
+                            <div class="col-md-6">
+                                <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <label class="col-md-4 col-form-label text-md-right">이메일</label>
+
+                            <div class="col-md-6">
+                                <input type="text" class="form-control" name="email1"> @ <input type="text" class="form-control" name="email2">
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <label for="birthday" class="col-md-4 col-form-label text-md-right">생년월일</label>
+
+                            <div class="col-md-6">
+                                <input id="birthday" type="date" class="form-control" name="birthday">
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <label for="zipcode" class="col-md-4 col-form-label text-md-right">우편번호</label>
+
+                            <div class="col-md-6">
+                                <input id="zipcode" type="text" name="zipcode" class="form_control" ondblclick="OpenWindow('../main/pop_zipcode.jsp', 'MPZ7', 500, 300)" readonly/>
+                                <input type="button" class="btn_simp" value="우편번호찾기" onclick="OpenWindow('../main/pop_zipcode.jsp', 'MPZ7', 500, 300)"/>
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <label for="new_addr" class="col-md-4 col-form-label text-md-right">주소</label>
+
+                            <div class="col-md-6">
+                                <input id="new_addr" type="password" class="form-control" name="new_addr" >
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="addr_dtl" class="col-md-4 col-form-label text-md-right">상세주소</label>
+
+                            <div class="col-md-6">
+                                <input id="addr_dtl" type="password" class="form-control" name="addr_dtl" >
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <label for="file" class="col-md-4 col-form-label text-md-right" >파일업로드</label>
+                            <div class="col-md-6">
+                                <input class="form-control" type="file" name="user_file" id="file" placeholder="이미지와 pdf파일만 업로드하세요">
+                            </div>
+                        </div>
+
+                        <div class="form-group row mb-0">
+                            <div class="col-md-6 offset-md-4">
+                                <button type="submit" class="btn btn-primary">
+                                    가입하기
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                    {{form_script}}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+

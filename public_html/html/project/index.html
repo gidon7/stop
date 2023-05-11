@@ -1,0 +1,44 @@
+<h2>회원 목록</h2>
+<form name="form1" class="form-inline mt-3 mb-3" method="get">
+    <input class="form-control mr-sm-2" type="text" name="s_keyword" placeholder="이름 또는 이메일을 입력하세요" style="width:50%;display: inline;">
+    <button class="btn btn-primary my-2 my-sm-0" type="submit">검색</button>
+</form>
+{{form_script}}
+
+<a href="user_insert.jsp" class="btn btn-success mb-3" style="position:relative;right:0;">회원 등록</a>
+
+<table class="table table-striped">
+    <thead>
+    <tr>
+        <th>No</th>
+        <th>로그인아이디</th>
+        <th>사용자명</th>
+        <th>등록일</th>
+        <th>상태</th>
+    </tr>
+    </thead>
+    <tbody>
+    <!--@loop(list)-->
+    <tr>
+        <td>{{list.__ord}}</td>
+        <td><a href="user_modify.jsp?id={{list.id}}">{{list.login_id}}</a></td>
+        <td>{{list.user_nm}}</td>
+        <td>{{list.reg_date}}</td>
+        <td>{{list.status_conv}}</td>
+    </tr>
+    <!--/loop(list)-->
+    </tbody>
+</table>
+<!--@nif(list)-->
+<table class="table table-striped">
+<tr>
+    <td>해당 자료가 없습니다.</td>
+</tr>
+</table>
+<!--/nif(list)-->
+
+<nav aria-label="Page navigation example">
+    <ul class="pagination justify-content-center">
+        <li class="page-item"><a class="page-link" href="#">{{pagebar}}</a></li>
+    </ul>
+</nav>

@@ -1,0 +1,74 @@
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-header">비밀번호 찾기</div>
+
+                <div class="card-body">
+                    <form name="form1" method="POST" target="sysfrm">
+                    <input type="hidden" name="mode" value="email_authno">
+                        <div class="form-group row">
+                            <label for="user_nm" class="col-md-4 col-form-label text-md-right">이름</label>
+
+                            <div class="col-md-6">
+                                <input type="text" class="form-control" name="user_nm" required autofocus>
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <label for="login_id" class="col-md-4 col-form-label text-md-right">아이디</label>
+
+                            <div class="col-md-6">
+                                <input type="text" class="form-control" name="login_id" required autofocus>
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <label class="col-md-4 col-form-label text-md-right">이메일</label>
+
+                            <div class="col-md-6">
+                                <input name="email1" id="email1" type="text" class="form-control" HNAME="이메일" REQUIRED="Y" /><span class='hipen2'>@</span>
+                                <input name="email2" id="email2" type="text" class="form-control" HNAME="이메일" REQUIRED="Y" />
+                            </div>
+                        </div>
+                        <div class="form-group row mb-0">
+                            <div class="col-md-6 offset-md-4">
+                                <input type="button" class="add_btn" value="인증번호 받기" onclick="sendEmailAuthNo()"/>
+<!--                                <input type="button" class="add_btn" value="임시비밀번호 받기" onclick="sendEmailAuthNo()"/>-->
+<!--                                <button type="submit" class="add_btn">임시비밀번호 받기</button>-->
+                            </div>
+                        </div>
+
+                        <div class="form-group row" style="margin-top: 1rem;">
+                            <label class="col-md-4 col-form-label text-md-right">인증번호 입력</label>
+                            <div class="col-md-6">
+                                <input name="auth_no" class="form-control" type="text" placeholder="발송된 인증번호 입력 "  HNAME="인증번호">
+                            </div>
+                        </div>
+
+                        <div class="form-group row mb-0">
+                            <div class="col-md-6 offset-md-4">
+                                <input type="button" value="인증번호 확인" onclick="sendEmailNewPasswd()" />
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <script>
+                    function sendEmailAuthNo() {
+                        var f = document.forms['form1'];
+                        f['mode'].value = "email_authno";
+                        f.submit();
+                        f['mode'].value = "";
+                    }
+                    function sendEmailNewPasswd() {
+                        var f = document.forms['form1'];
+                        // console.log("11");
+                        f['mode'].value = "email_check";
+                        f.submit();
+                        f['mode'].value = "";
+                    }
+                </script>
+            </div>
+        </div>
+    </div>
+</div>

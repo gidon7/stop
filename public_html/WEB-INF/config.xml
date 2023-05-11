@@ -1,0 +1,77 @@
+<config>
+    <env>
+        <docRoot>/home/igd/public_html</docRoot>
+        <tplRoot>/home/igd/public_html/html</tplRoot>
+        <dataDir>/home/igd/public_html/data</dataDir>
+        <dataUrl>/data</dataUrl>
+        <logDir>/var/log/malgnlms</logDir>
+        <webUrl>http://igd.malgn.co.kr</webUrl>
+        <fileDir>/home/igd/public_html/data/file</fileDir>
+        <jndi>jdbc/igd</jndi>
+        <mailFrom>mailer@malgn.co.kr</mailFrom>
+        <was>resin</was>
+        <encoding>utf-8</encoding>
+
+        <ownerAccount>igd</ownerAccount>
+        <windowTitle>LMS 호스팅</windowTitle>
+        <useSeq>N</useSeq>
+        <maxPostSize>1024</maxPostSize>
+        <denyHtml>N</denyHtml>
+
+        <cmid>lgdacomxpay</cmid>
+        <mkey>95160cce09854ef44d2edb2bfb05f9f3</mkey>
+        <platform>test</platform>
+
+        <siteKey>756a7955d2560a116c399569c1aa58c0</siteKey>
+    </env>
+
+    <oauth>
+        <vendor>
+            <vendorName>naver</vendorName>
+            <authorize>https://nid.naver.com/oauth2.0/authorize</authorize>
+            <token>https://nid.naver.com/oauth2.0/token</token>
+            <profile>https://openapi.naver.com/v1/nid/me</profile>
+            <scope></scope>
+        </vendor>
+
+        <vendor>
+            <vendorName>facebook</vendorName>
+            <authorize>https://www.facebook.com/v3.0/dialog/oauth</authorize>
+            <token>https://graph.facebook.com/v2.8/oauth/access_token</token>
+            <profile>https://graph.facebook.com/v2.8/me</profile>
+            <scope>public_profile,email</scope>
+        </vendor>
+
+        <vendor>
+            <vendorName>google</vendorName>
+            <authorize>https://accounts.google.com/o/oauth2/auth</authorize>
+            <token>https://www.googleapis.com/oauth2/v4/token</token>
+            <profile>https://www.googleapis.com/oauth2/v1/userinfo</profile>
+            <scope>email%20profile</scope>
+        </vendor>
+
+        <vendor>
+            <vendorName>kakao</vendorName>
+            <authorize>https://kauth.kakao.com/oauth/authorize</authorize>
+            <token>https://kauth.kakao.com/oauth/token</token>
+            <profile>https://kapi.kakao.com/v2/user/me</profile>
+            <scope>profile,account_email</scope>
+        </vendor>
+
+        <vendor>
+            <vendorName>line</vendorName>
+            <authorize>https://access.line.me/oauth2/v2.1/authorize</authorize>
+            <token>https://api.line.me/oauth2/v2.1/token</token>
+            <profile>https://api.line.me/v2/profile</profile>
+            <scope>profile%20openid</scope>
+        </vendor>
+
+        <vendor>
+            <vendorName>kollus_live</vendorName>
+            <authorize>https://live-kr.kollus.com/oauth/authorize</authorize>
+            <token>https://live-kr.kollus.com/oauth/token</token>
+            <profile>https://live-kr.kollus.com/oauth/profile</profile>
+            <scope>live:control live:statistics</scope>
+        </vendor>
+    </oauth>
+</config>
